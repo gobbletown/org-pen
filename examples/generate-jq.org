@@ -1,0 +1,45 @@
+* Generate some json
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  echo "What should the output look like?" | ci pena pf-generic-completion-50-tokens/1 | jq .
+#+END_SRC
+
+Example 1:
+
+#+begin_src json
+[
+  "\n\nWhat went wrong?\n\nPossible Issue:\n\nThe sass executable has not been copied into the project. To get sass to work, run the following code:\n\nsudo gem install sass\n\n\n\nThen,",
+  "\n\nThe output should be:\n\n{ \"status\": \"success\", \"data\": { \"id\": \"1\", \"name\": \"Test Name 1\", \"content\": \"Hello World\", \"updated_at\": \"2014-08",
+  "",
+  "\n\nThe output should be formatted so it looks like the image below.\n\nWhat code should be used?\n\nThe code should be written in C++. The functions randint(a,b) and srand(x) should",
+  "\n\nWhat do you want to happen?\n\nCreate a feature branch with a failing test-case.\n\nPush the branch.\n\nOpen a pull request.\n\nA CI system will run the failing test-case and report that"
+]
+#+end_src
+
+* Here is what I want the json to look like
+
+Example 2:
+
+#+BEGIN_SRC json -n :async :results verbatim code
+  {
+    "jsonrpc": "2.0",
+    "id": 10,
+    "result": [
+      {
+        "label": "directory-exists?"
+      },
+      {
+        "label": "nack-guard-evt"
+      },
+      {
+        "label": "procedure->method"
+      }
+    ]
+  }
+#+END_SRC
+
+* For each element of json in Example 1, make it a label like in Example 2
+
+Example 3:
+
+#+BEGIN_SRC json -n :async :results verbatim code
