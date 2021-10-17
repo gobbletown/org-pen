@@ -1,0 +1,5 @@
+* =org-pen=
+The aim of =org-pen= is to facilitate code-
+generation, the construction of pipelines,
+reversibly generate inputs from outputs, and
+generate programs from inputs and outputs.
