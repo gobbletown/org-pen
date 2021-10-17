@@ -38,8 +38,7 @@ Example 2:
   }
 #+END_SRC
 
-* For each element of json in Example 1, make it a label like in Example 2
-
-Example 3:
+* This is the jq code to turn Example 1 into Example 2
 
 #+BEGIN_SRC json -n :async :results verbatim code
+cat example-1.json | jq 
