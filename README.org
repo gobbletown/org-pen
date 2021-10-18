@@ -5,3 +5,5 @@ reversibly generate inputs from outputs, and
 generate programs from inputs and outputs.
 
 - https://mullikine.github.io/posts/codex-is-reversible-computing-exemplified/
+
+Maybe I should call the project =pen-tangle= instead of =org-pen=?
